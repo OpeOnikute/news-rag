@@ -1,0 +1,9 @@
+__pycache__
+.venv
+vectorstore
+data/
+posts/
+
+.env
+*.json
+notes.md

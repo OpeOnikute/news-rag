@@ -13,6 +13,8 @@ from langchain.chains import RetrievalQA
 from langchain_community.document_loaders import TextLoader
 from langchain_openai import OpenAI
 
+from dotenv import load_dotenv
+
 import os
 
 class RAG:
@@ -201,7 +203,6 @@ def main():
     # rag.load_documents()
     # Example queries
     questions = [
-        # "What happened with Marasoft fraud in 2025?",
         "What is an example of a fraud case in Kenya?",
         "What is CIG Motors?"
     ]
@@ -216,4 +217,5 @@ def main():
             print(f"  URL: {source['url']}")
 
 if __name__ == "__main__":
+    load_dotenv()
     main()
